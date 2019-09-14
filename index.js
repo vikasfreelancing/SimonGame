@@ -30,6 +30,7 @@ function restart()
   })
 }
 function intializeButtons() {
+  $("#instructions").hide();
   $(".btn").on("click", function(event) {
     var userColorChosen = event.target.id;
     userClickedPattern.push(userColorChosen);
@@ -84,6 +85,7 @@ function gameOver() {
   },200)
   $(".btn").unbind("click")
   console.log(gameOver);
+  $("#instructions").show();
   restart();
 }
 

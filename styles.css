@@ -6,19 +6,36 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin: 5%;
   color: #FEF2BF;
 }
 
-button{
+.game {
+  color: #FF851B;
+  font-size: 2.5rem;
+}
+
+button {
   background-color: #011F3F;
+}
+
+.wait {
+  font-size: 3rem;
+  font-family: courier, arial, helvetica;
+  color: #B10DC9
+}
+
+.ins {
+  font-size: 2rem;
+  display: inline;
+  color: #3D9970;
+  text-decoration: none;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -55,8 +72,9 @@ button{
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-@media only screen and (max-width: 768px){
-  .btn{
+
+@media only screen and (max-width: 768px) {
+  .btn {
     margin: 30px;
     display: inline-block;
     height: 75px;
@@ -64,8 +82,16 @@ button{
     border: 5px solid black;
     border-radius: 20%;
   }
-  #level-title{
+
+  #level-title {
     font-family: Montserrat-black;
     font-size: 1.5rem
   }
+
+  .ins {
+    font-size: 1.5rem
+  }
+}
+.img{
+  border-radius: 100%;
 }
