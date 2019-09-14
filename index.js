@@ -2,11 +2,11 @@ var col = ["green", "red", "yellow", "blue"]
 var gamePattern = []
 var userClickedPattern = []
 var level;
-$(document).keydown(function() {
+$("h1").click(function() {
   level = 0;
   nextSequence();
   intializeButtons();
-  $(document).unbind("keypress")
+  $("h1").unbind("click")
 })
 //
 // for(var i=0;i<4;i++)
@@ -22,11 +22,11 @@ $(document).keydown(function() {
 // }
 function restart()
 {
-  $(document).keydown(function() {
+  $("h1").click(function() {
     level = 0;
     nextSequence();
     intializeButtons();
-    $(document).unbind("keypress")
+    $(document).unbind("click")
   })
 }
 function intializeButtons() {
@@ -77,7 +77,7 @@ function gameOver() {
   level = 0;
   gamePattern=[]
   userClickedPattern=[]
-  $("h1").text("Game Over, Press Any Key to Restart Failed At Level "+temp);
+  $("h1").text("Game Over, Click here to Restart Failed At Level "+temp);
   $("body").addClass("game-over")
   setTimeout(function (){
     $("body").removeClass("game-over")
