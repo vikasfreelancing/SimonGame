@@ -2,7 +2,7 @@ var col = ["green", "red", "yellow", "blue"]
 var gamePattern = []
 var userClickedPattern = []
 var level;
-$(document).keypress(function() {
+$(document).keydown(function() {
   level = 0;
   nextSequence();
   intializeButtons();
@@ -22,7 +22,7 @@ $(document).keypress(function() {
 // }
 function restart()
 {
-  $(document).keypress(function() {
+  $(document).keydown(function() {
     level = 0;
     nextSequence();
     intializeButtons();
