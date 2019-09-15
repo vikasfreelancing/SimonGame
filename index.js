@@ -43,6 +43,7 @@ function intializeButtons() {
       playSound(userColorChosen)
     }
     if (!x) {
+
       playSound("wrong")
       level--;
       gameOver();
@@ -76,9 +77,9 @@ function len(x) {
 function gameOver() {
   temp = level;
   level = 0;
+  $("h1").text("Game Over, Click here to Restart Failed At Level "+temp);
   gamePattern=[]
   userClickedPattern=[]
-  $("h1").text("Game Over, Click here to Restart Failed At Level "+temp);
   $("body").addClass("game-over")
   setTimeout(function (){
     $("body").removeClass("game-over")

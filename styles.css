@@ -19,6 +19,20 @@ button {
   background-color: #011F3F;
 }
 
+span{
+  color:#FF851B;
+}
+.para{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #813479;
+  font-family:Montserrat-bold;
+}
+.ques{
+  font-family: courier;
+  color: #FF33F6
+}
+
 .wait {
   font-size: 3rem;
   font-family: courier, arial, helvetica;
@@ -90,8 +104,10 @@ button {
 
   .ins {
     font-size: 1.5rem
+    padding:1rem
   }
 }
 .img{
+  padding: 2rem;
   border-radius: 100%;
 }
