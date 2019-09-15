@@ -111,3 +111,7 @@ span{
   padding: 2rem;
   border-radius: 100%;
 }
+.large{
+  font-size: 4rem;
+  font-weight: bold;
+}
