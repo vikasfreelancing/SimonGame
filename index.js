@@ -1,3 +1,9 @@
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+
+
 var col = ["green", "red", "yellow", "blue"]
 var gamePattern = []
 var userClickedPattern = []
